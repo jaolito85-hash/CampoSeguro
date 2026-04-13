@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.expo/
+
+# Build
+android/app/build/
+*.apk
+*.aab
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models (downloaded on-device, not in repo)
+assets/models/*.tflite
+
+# Logs
+*.log
+npm-debug.log*
+
+# Testing
+coverage/
+
+# TypeScript
+*.tsbuildinfo
