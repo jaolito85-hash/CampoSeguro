@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "CampoSeguro",
+    "slug": "CampoSeguro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "scheme": "camposeguro",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a3a1a"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1a3a1a"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.camposeguro.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "CampoSeguro precisa da camera para identificar plantas, animais e riscos."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "CampoSeguro precisa acessar suas fotos para analise."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "CampoSeguro usa sua localizacao para navegacao offline e marcacao de pontos no campo.",
+          "locationWhenInUsePermission": "CampoSeguro usa sua localizacao para navegacao offline e marcacao de pontos no campo."
+        }
+      ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "91ac811b-d924-4542-bda9-486eac520c2e"
+      }
+    }
+  }
+}

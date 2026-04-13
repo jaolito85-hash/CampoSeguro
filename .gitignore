@@ -33,3 +33,10 @@ coverage/
 
 # TypeScript
 *.tsbuildinfo
+
+# Build output
+dist/
+dist2/
+
+# Vercel
+.vercel/

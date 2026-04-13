@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Joao Marcos/.claude/projects/c--projetos-CampoSeguro/memory/**)",
+      "Bash(npx expo:*)",
+      "Bash(npm install:*)",
+      "Bash(npm list:*)",
+      "Bash(grep -r \"getAllAsync\\\\|runAsync\\\\|getFirstAsync\\\\|execSync\\\\|getAllSync\\\\|openDatabaseSync\" node_modules/expo-sqlite/build/*.d.ts)",
+      "Bash(curl -s \"https://generativelanguage.googleapis.com/v1beta/models?key=$\\(grep -r 'AIza' c:/projetos/CampoSeguro/src/)",
+      "Bash(python -c \"import sys,json; data=json.load\\(sys.stdin\\); [print\\(m['name']\\) for m in data.get\\('models',[]\\) if 'generateContent' in m.get\\('supportedGenerationMethods',[]\\)]\")",
+      "Bash(curl -s \"https://generativelanguage.googleapis.com/v1beta/models\")",
+      "Bash(curl -s \"https://generativelanguage.googleapis.com/v1beta/models?pageSize=100\")",
+      "Bash(curl -s \"https://generativelanguage.googleapis.com/v1beta/models?pageSize=100&key=AIzaSyC8YdNXFgp4ydeMvSNGiJs5Sp8zN860Fxk\")",
+      "Bash(python -c \"import sys,json;[print\\(m['name']\\) for m in json.load\\(sys.stdin\\).get\\('models',[]\\) if 'generateContent' in m.get\\('supportedGenerationMethods',[]\\)]\")",
+      "Bash(eas --version)",
+      "Bash(eas build:view f3b2dc74-2bc8-4a44-821b-ea54627afd1f --json)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('error',{}\\).get\\('message','no error field'\\)\\); print\\('status:', d.get\\('status',''\\)\\); print\\('logUrl:', d.get\\('logsUrl',''\\)\\)\")"
+    ]
+  }
+}
